@@ -1,0 +1,95 @@
+>>
+user login check
+>>
+
+# Predefined Credentials
+username = "admin"
+password = "1234"
+# Input from User
+input_username = input("Enter username: ")
+input_password = input("Enter password: ")
+# Check Credentials
+if (input_username == username and input_password == password):
+    print("Login Successful")  
+else:
+    print("Invalid Credentials")
+# End of Program
+Login Successful
+
+
+>>
+Pass/Fail Analyzer
+>>
+
+# List of Student Marks
+marks = [45, 78, 90, 33, 66]
+# Initialize Counter
+pass_count = 0
+fail_count = 0
+# Loop through marks to evaluate results 
+for mark in marks: 
+    if mark >=50:
+        pass_count += 1
+    else:
+        fail_count += 1
+# Display final Results
+print("Total Students:", len(marks))
+print("Number of Students Passes:", pass_count)
+print("Number of Students failed", fail_count)
+# End Of Program
+Total Students: 5
+Number of Students Passes: 3
+Number of Students failed 2
+
+>>
+Simple Data Cleaner
+>>
+
+# List of names with inconsistent formatting
+names = [" Alice ", "bob", "CHARLIE "]
+# Clean names: it removes spaces and converts Uppercase to Lowercase
+cleaned_names = []
+for name in names:
+    cleaned_name = name.strip().lower()
+    cleaned_names.append(cleaned_name)
+# Now Print The Clean List
+print("Cleaned Names:", cleaned_names)
+# End Of Program
+Cleaned Names: ['alice', 'bob', 'charlie']
+
+>>
+Message Length Analyzer
+>>
+
+# Given list of messages
+messages = ["Hi", "Welcome to the platform", "OK"]
+# Loop through each message
+for message in messages:
+    length = len(message) 
+    # Display message and its length
+    print(f"Message: '{message}' | Length: {length}")
+    # Check if message length is greater than 10
+    if length > 10:
+        print("This message is longer than 10 characters.\n")
+    else:
+        print("This message length is acceptable.\n")
+# End of Program
+Message: 'Hi' | Length: 2
+This message length is acceptable.
+Message: 'Welcome to the platform' | Length: 23
+This message is longer than 10 characters.
+Message: 'OK' | Length: 2
+This message length is acceptable.
+
+>>
+ERROR Message Detector
+>>
+
+# Given List of system log entries
+logs = ["INFO", "ERROR", "WARNING", "ERROR"]
+# Counts number of ERROR messages
+error_count = logs.count("ERROR")
+# Print Result
+print("Total number of ERROR messages detected:", error_count)
+# End of Program
+Total number of ERROR messages detected: 2
